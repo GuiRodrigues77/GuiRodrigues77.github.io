@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guilherme Rodrigues Gabriel | Backend Developer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    header {
+      padding: 90px 0 70px;
+    }
+
+    .tag {
+      color: #60a5fa;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #60a5fa;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: #a8b3c7;
+      font-size: 1.1rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #263247;
+      background: #121a2a;
+      font-weight: bold;
+    }
+
+    .button.primary {
+      background: #60a5fa;
+      color: #07111f;
+      border-color: #60a5fa;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      max-width: 800px;
+      color: #a8b3c7;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #121a2a;
+      border: 1px solid #263247;
+      padding: 8px 13px;
+      border-radius: 20px;
+      color: #dbe5f5;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .project {
+      background: #111827;
+      border: 1px solid #202b40;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #a8b3c7;
+      margin-bottom: 15px;
+    }
+
+    .tech {
+      color: #60a5fa;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    .project a {
+      font-weight: bold;
+      color: #dbeafe;
+    }
+
+    footer {
+      border-top: 1px solid #202b40;
+      margin-top: 50px;
+      padding: 30px 0 50px;
+      color: #7f8ba0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.7rem;
+      }
+
+      header {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header>
+
+      <div class="tag">
+        BACKEND DEVELOPER · ENGENHARIA DA COMPUTAÇÃO
+      </div>
+
+      <h1>
+        Olá, eu sou <span>Guilherme.</span>
+      </h1>
+
+      <p class="intro">
+        Estudante de Engenharia da Computação no último ano, com foco em
+        desenvolvimento backend, APIs e sistemas. Gosto de transformar
+        ideias em projetos práticos e estou sempre buscando aprender
+        novas tecnologias.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="button primary"
+          href="https://github.com/GuiRodrigues77"
+          target="_blank">
+          GitHub
+        </a>
+
+        <a
+          class="button"
+          href="https://www.linkedin.com/in/guilhermerodriguesgabriel"
+          target="_blank">
+          LinkedIn
+        </a>
+
+        <a
+          class="button"
+          href="mailto:guilhermerodriguesgabriel25@gmail.com">
+          Contato
+        </a>
+
+      </div>
+
+    </header>
+
+
+    <section>
+
+      <h2>Sobre mim</h2>
+
+      <p class="text">
+        Tenho interesse principalmente em backend, cloud, automação e
+        inteligência artificial. Nos meus projetos, venho desenvolvendo
+        APIs REST, trabalhando com bancos de dados, Docker, validação,
+        documentação e integração entre diferentes tecnologias.
+      </p>
+
+    </section>
+
+
+    <section>
+
+      <h2>Tecnologias</h2>
+
+      <div class="skills">
+
+        <span class="skill">TypeScript</span>
+        <span class="skill">NestJS</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Java</span>
+        <span class="skill">Python</span>
+        <span class="skill">PostgreSQL</span>
+        <span class="skill">Docker</span>
+        <span class="skill">AWS</span>
+        <span class="skill">REST APIs</span>
+        <span class="skill">Git</span>
+        <span class="skill">MikroORM</span>
+        <span class="skill">Swagger</span>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Projetos</h2>
+
+      <div class="projects">
+
+
+        <div class="project">
+
+          <h3>🎮 Gaming Backend API</h3>
+
+          <p>
+            API REST para uma plataforma de jogos, com usuários,
+            jogos e sessões de jogo relacionadas.
+          </p>
+
+          <div class="tech">
+            NestJS · TypeScript · PostgreSQL · MikroORM · Docker · Swagger
+          </div>
+
+          <a
+            href="https://github.com/GuiRodrigues77/gaming-backend-api"
+            target="_blank">
+            Ver projeto →
+          </a>
+
+        </div>
+
+
+        <div class="project">
+
+          <h3>🤖 Ad Performance AI</h3>
+
+          <p>
+            Projeto de análise de campanhas utilizando Python e
+            inteligência artificial para explorar automação e análise
+            de desempenho.
+          </p>
+
+          <div class="tech">
+            Python · IA · APIs · Análise de dados
+          </div>
+
+          <a
+            href="https://github.com/GuiRodrigues77/ad-performance-ai"
+            target="_blank">
+            Ver projeto →
+          </a>
+
+        </div>
+
+
+        <div class="project">
+
+          <h3>📊 Análise de Clientes RFM</h3>
+
+          <p>
+            Dashboard para análise e segmentação de clientes utilizando
+            o modelo RFM.
+          </p>
+
+          <div class="tech">
+            Python · Pandas · Streamlit · Plotly
+          </div>
+
+          <a
+            href="https://github.com/GuiRodrigues77/analise-clientes-rfm"
+            target="_blank">
+            Ver projeto →
+          </a>
+
+        </div>
+
+
+        <div class="project">
+
+          <h3>🏃 TCC — Classificação de Movimentos</h3>
+
+          <p>
+            Sistema para classificação de movimentos humanos utilizando
+            sensores inerciais e aprendizado de máquina.
+          </p>
+
+          <div class="tech">
+            Python · Machine Learning · ESP32 · Sensores
+          </div>
+
+          <a
+            href="https://github.com/GuiRodrigues77/tcc-movimentos-esp32"
+            target="_blank">
+            Ver projeto →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Vamos conversar?</h2>
+
+      <p class="text">
+        Estou aberto a oportunidades em backend, desenvolvimento de
+        software, automação e inteligência artificial.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="button primary"
+          href="mailto:guilhermerodriguesgabriel25@gmail.com">
+          Entrar em contato
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+
+      © 2026 Guilherme Rodrigues Gabriel
+
+    </footer>
+
+  </main>
+
+</body>
+</html>
